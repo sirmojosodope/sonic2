@@ -1,130 +1,130 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="mystyle.css">
-<script src="./script.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="mystyle.css">
 
-<style>
-body, html {
-  height: 100%;
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
+  <style>
+    body,
+    html {
+      height: 100%;
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
 
-.hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Lee - Copy.jpg");
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+    .hero-image {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("Lee - Copy.jpg");
+      height: 50%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative;
+    }
 
-.hero-text {
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-}
+    .hero-text {
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: white;
+    }
 
-.hero-text button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 10px 25px;
-  color: black;
-  background-color: #ddd;
-  text-align: center;
-  cursor: pointer;
-}
+    .hero-text button {
+      border: none;
+      outline: 0;
+      display: inline-block;
+      padding: 10px 25px;
+      color: black;
+      background-color: #ddd;
+      text-align: center;
+      cursor: pointer;
+    }
 
-.hero-text button:hover {
-  background-color: #555;
-  color: white;
-}
-</style>
+    .hero-text button:hover {
+      background-color: #555;
+      color: white;
+    }
+  </style>
 </head>
+
 <body>
 
-<div class="hero-image">
-  <div class="hero-text">
-    <h1 style="font-size:50px">Lamont Barnett</h1>
-    <p> Coder</p>
-    <button>Hire me</button>
-    
-  
-  </div>
-</div>
+  <div class="hero-image">
+    <div class="hero-text">
+      <h1 style="font-size:50px">Lamont Barnett</h1>
+      <p> Coder</p>
+      <button>Hire me</button>
 
-<p>
- <strong> Experienced and communicative fashion stylist with a proven track record of co-organizing photo shoots and styling models. 2+ years of professional experience. Proven history of successful collaboration with clients, brand managers, and executives to deliver seasonal lines and specialized projects. Excellent ability to identify target markets and deliver on emerging trends. Also currently coding at the Georgia Tech Institute as an aspiring Coder. With several projects to be done I'm well on my way to being the best.</strong>
-</p>
+
+    </div>
+  </div>
+
+  <p>
+    <strong> Experienced and communicative fashion stylist with a proven track record of co-organizing photo shoots and
+      styling models. 2+ years of professional experience. Proven history of successful collaboration with clients,
+      brand managers, and executives to deliver seasonal lines and specialized projects. Excellent ability to identify
+      target markets and deliver on emerging trends. Also currently coding at the Georgia Tech Institute as an aspiring
+      Coder. With several projects to be done I'm well on my way to being the best.</strong>
+  </p>
 
   <h1> Contact me</h1>
-  <p>After you fill out the information on the bottom you  will be transported to my Brand website. </p>
-  
+  <p>After you fill out the information on the bottom you will be transported to my Brand website. </p>
+
 
   <!--Form-->
-  <form action="process.php" method="POST">
-      <div>
+  <form>
+    <div>
       <label>First Name</label>
-      <input type="text" name="firstname"
-      placeholder="Enter First name">
-  </div>
-  <br>
-  <div>
+      <input class="input" id="firstName" type="text" name="firstname" />
+      
+    </div>
+    <br>
+    <div>
       <label>Last Name</label>
-      <input tpye="text" name="lastname"
-      placeholder="Enter Last name"
-  </div>
-  <br>
-  <br>
-  <div>
-      <label>Message</label>
-      <textarea name="message"></textarea>
+      <input class="input" id="lastName" tpye="text" name="lastname" />
      
-  </div>
-  <br>
-  <div>
+    </div>
+    <br>
+    <br>
+    <div>
+      <label>Message</label>
+      <textarea id="textArea" name="message"></textarea>
+
+    </div>
+    <br>
+    <div>
       <label>Gender</label>
-      <select name="gender">
-          <option value="male">Male</option>
-          <option value="female">Female</option>
-          <option value="other">other</option>
-            <div>
-  </div>
-  <br>
-  <label>Age:</label>
-  <input type="number" name="age"
-  value="30"
-  <div>
-      <label>Birthday</label>
-      <input type="date" name="birthday"
-  </div>
-  </div>
-
-
-
-
-
+      <select id="genderSelect" class="input" name="gender">
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+        <option value="other">other</option>
+      </select>
+        </div>
+        <br>
+        <label>Age:</label>
+        <input id="age" type="number" name="age" value="30" />
+        <label>Birthday</label>
+        <input id="bDay" type="date" name="birthday" />
+    </div>
   </form>
 
   <!--Button-->
-  <button>
-    <a href="https://pinkis.land" class="button">Send</a>
-  </button>
+  <button id="sendBtn"" class=" button">Send</button>
+  <div id="userInfo">
+    <h2 id="name"></h2>
+    <div id="attributes"></div>
+  </div>
 
   <!--Image-->
   <a href="Lee - Copy.jpg">
-  <br>
+    <br>
 
-  <p><cite></cite>Designed by Lamont Barnett</cite>
-  </p>
- 
+    <p><cite>Designed by Lamont Barnett</cite></p>
 
-  <script src="./script.js"></script>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>
