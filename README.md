@@ -10,4 +10,9 @@ This is my portoflio !
 -Updated ReadMe.md
 -Buttons on top of the navbar will now scroll you down the page to designated point
 -Overall more polished design
+<<<<<<< HEAD
 Trying some new css tricks will continue to update. 
+=======
+Trying some new css tricks will continue to update. 
+![Document (1)](https://user-images.githubusercontent.com/97686342/162856014-5f289085-15b8-4e26-b9f2-06b1e338e550.gif)
+>>>>>>> d59c9f6b459f70679ca3bff37a55d31fa4cba79f
